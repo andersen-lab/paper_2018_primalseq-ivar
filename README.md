@@ -1,47 +1,68 @@
-## --- COOKBOOK --- ##
+# Additional Files
+
+# Cookbook
+
 Run all iVar commands using two Zika virus replicates with known reference sequences - 26_a and 26_b.
 
-Download required files:
-https://www.dropbox.com/sh/a350izwgxkgxcxj/AAC8JtI-jmEF4xLV3M1C2Qwxa?dl=0
+Download required files [here](https://www.dropbox.com/sh/a350izwgxkgxcxj/AAC8JtI-jmEF4xLV3M1C2Qwxa?dl=0)
 
-## --- INSTALLATION --- ##
+## INSTALLATION
 
-# Xcode command line tools install
+Xcode command line tools install
+```
 xcode-select --install
 [follow prompts]
+```
 
-# Brew install
+### Brew install
+```
 https://brew.sh/
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
-# Autotools install
+### Autotools install
+```
 brew install autoconf automake libtool
+```
 
-# Samtools install
-https://github.com/samtools/samtools
+### Samtools install
+
+Download SAMtools from [here](http://www.htslib.org/download/) or [Github](https://github.com/samtools/samtools)
+
+```
 autoheader
 autoconf -Wno-syntax
 ./configure
 make
 make install
+```
 
-# htslib install
-https://github.com/samtools/htslib
+### htslib install
+
+Download htslib from [here](http://www.htslib.org/download/) or [Github](https://github.com/samtools/htslib)
+
+```
 autoheader
 autoconf
 ./configure
 make
 make install
+```
 
-# ivar install
-https://github.com/andersen-lab/ivar
+### iVar install
+
+Download iVar from [Github](https://github.com/andersen-lab/ivar)
+
+```
 ./autogen.sh
 ./configure
 make
 make install
+```
 
+### Running iVar
 
-## --- RUN IVAR --- ##
+```
 # Index bam files
 samtools index ZI-merge-26_a.sorted.bam
 samtools index ZI-merge-26_b.sorted.bam
@@ -82,3 +103,4 @@ samtools mpileup -A -d 300000 --reference ZIKV_PRV.fasta -Q 0 -F 0 26_b.trimmed.
 
 # Filter variants from the two replicates
 ivar filtervariants -p 26.filtered_variants 26_a.variants.filtered.tsv 26_b.variants.filtered.tsv
+```
