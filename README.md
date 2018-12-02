@@ -1,5 +1,7 @@
 # Additional Files
 
+Notebook showing analysis of iSNVs called using iVar - [Link](https://andersen-lab.github.io/paper_2018_primalseq-ivar/analysis.html)
+
 # Cookbook
 
 Run all iVar commands using two Zika virus replicates with known reference sequences - 26_a and 26_b.
