@@ -1,0 +1,3 @@
+[submodule "ivar-validation"]
+	path = ivar-validation
+	url = https://github.com/andersen-lab/ivar-validation
