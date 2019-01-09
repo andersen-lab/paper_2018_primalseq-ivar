@@ -4,7 +4,7 @@ Notebook showing analysis of iSNVs called using iVar - [Link](https://andersen-l
 
 # Validation of iVar
 
-The code and data used for validation can be found [here](https://github.com/andersen-lab/paper_2018_primalseq-ivar/blob/master/ivar-validation/).
+The code and data used for validation can be found [here](https://github.com/andersen-lab/ivar-validation.git).
 
 # Cookbook
 
