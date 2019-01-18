@@ -13,3 +13,9 @@ The code and data used for validation can be found [here](https://github.com/and
 # iVar repository
 
 Source code and installation instructions are available [here](https://github.com/andersen-lab/ivar).
+
+---
+**Andersen Lab**  
+The Scripps Research Institute  
+La Jolla, CA, USA  
+[data@andersen-lab.com](mailto:data@andersen-lab.com)
